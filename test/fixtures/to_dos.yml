@@ -2,12 +2,8 @@
 
 one:
   name: MyString
-  priority: MyString
-  time_to_complete: 1
   complete: false
 
 two:
   name: MyString
-  priority: MyString
-  time_to_complete: 1
   complete: false

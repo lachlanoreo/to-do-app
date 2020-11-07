@@ -10,12 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_07_125156) do
+ActiveRecord::Schema.define(version: 2020_11_07_131651) do
 
   create_table "to_dos", force: :cascade do |t|
     t.string "name"
-    t.string "priority"
-    t.integer "time_to_complete"
     t.boolean "complete"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -1,0 +1,15 @@
+<ul>
+  <% @todos.each do |todo| %>
+    <li><%= todo.name %> <%= link_to 'edit', edit_to_do_path(todo) %> <%= link_to "Delete",
+            to_do_path(todo),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %> </li>
+  <% end %>
+</ul>
+
+<%= form_for(@todo) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
